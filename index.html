@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angebot anfordern | Textflows Übersetzungsbüro Krefeld</title>
+<meta name="description" content="Kostenloses Angebot für Fachübersetzungen, beglaubigte Übersetzungen und Dolmetschen anfordern. Dokumente direkt hochladen – Textflows, Krefeld.">
+<meta name="robots" content="index,follow">
+<style>
+  :root{--navy:#14284b;--teal:#1f8a8a;--bg:#f5f7fa;--card:#fff;--text:#1d2433;--muted:#5b6475;--line:#d9dee7;--err:#b3261e}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+  header{background:var(--navy);color:#fff;padding:28px 20px 34px;text-align:center}
+  header a.brand{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.5px;font-size:1.35rem}
+  header h1{margin:14px 0 6px;font-size:1.6rem;font-weight:650}
+  header p{margin:0 auto;max-width:560px;opacity:.88}
+  main{max-width:720px;margin:-18px auto 40px;padding:0 16px}
+  .card{background:var(--card);border-radius:14px;box-shadow:0 4px 20px rgba(20,40,75,.08);padding:26px 22px}
+  .steps{display:flex;gap:10px;justify-content:space-between;margin:0 0 22px;padding:0;list-style:none;font-size:.88rem;color:var(--muted)}
+  .steps li{flex:1;text-align:center}
+  .steps b{display:block;width:30px;height:30px;line-height:30px;margin:0 auto 4px;border-radius:50%;background:var(--teal);color:#fff}
+  label{display:block;font-weight:600;margin:16px 0 6px;font-size:.95rem}
+  .opt{font-weight:400;color:var(--muted);font-size:.85rem}
+  input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;font:inherit;background:#fff}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);border-color:var(--teal)}
+  textarea{min-height:110px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:560px){.row{grid-template-columns:1fr}}
+  .drop{border:2px dashed var(--line);border-radius:11px;padding:20px;text-align:center;cursor:pointer;color:var(--muted);transition:.2s}
+  .drop:hover,.drop.over{border-color:var(--teal);background:#eef8f8}
+  .drop input{display:none}
+  #files{margin:8px 0 0;padding:0;list-style:none;font-size:.88rem}
+  #files li{padding:4px 0;border-bottom:1px solid #eef0f4}
+  .hint{font-size:.83rem;color:var(--muted);margin-top:6px}
+  .check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.9rem}
+  .check input{width:auto;margin-top:4px}
+  button{margin-top:22px;width:100%;padding:15px;border:0;border-radius:10px;background:var(--teal);color:#fff;font-size:1.05rem;font-weight:650;cursor:pointer}
+  button:hover{background:#18716f}
+  button:disabled{opacity:.6;cursor:wait}
+  .msg{display:none;margin-top:14px;padding:12px;border-radius:9px;font-size:.92rem}
+  .msg.err{display:block;background:#fdecea;color:var(--err)}
+  .alt{text-align:center;margin-top:22px;font-size:.93rem;color:var(--muted)}
+  .alt a{color:var(--navy);font-weight:600}
+  .trust{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 0;padding:0;list-style:none;font-size:.85rem}
+  .trust li{background:#e8eef7;color:var(--navy);padding:6px 11px;border-radius:20px}
+  footer{text-align:center;font-size:.82rem;color:var(--muted);padding:0 16px 30px}
+  footer a{color:var(--muted)}
+  .hp{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="https://www.textflows.de">TEXTFLOWS</a>
+  <h1>Kostenloses Angebot anfordern</h1>
+  <p>Laden Sie Ihr Dokument hoch – wir melden uns in der Regel innerhalb von 24&nbsp;Stunden (werktags) mit Preis und Liefertermin.</p>
+</header>
+
+<main>
+<div class="card">
+  <ol class="steps">
+    <li><b>1</b>Dokument hochladen</li>
+    <li><b>2</b>Angebot erhalten</li>
+    <li><b>3</b>Übersetzung erhalten</li>
+  </ol>
+
+  <form id="f" action="https://formsubmit.co/info@textflows.de" method="POST" enctype="multipart/form-data" novalidate>
+    <input type="hidden" name="_subject" value="Neue Angebotsanfrage – textflows.de">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://www.textflows.de">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+    <label for="leistung">Gewünschte Leistung</label>
+    <select id="leistung" name="Leistung" required>
+      <option value="">Bitte wählen …</option>
+      <option>Beglaubigte Übersetzung (Urkunden, Zeugnisse, Ausweise …)</option>
+      <option>Fachübersetzung (Recht, Medizin, Technik, Wirtschaft)</option>
+      <option>Express-Übersetzung</option>
+      <option>Dolmetschen (vor Ort / online)</option>
+      <option>Sonstiges</option>
+    </select>
+
+    <div class="row">
+      <div>
+        <label for="von">Von Sprache</label>
+        <select id="von" name="Ausgangssprache" required>
+          <option value="">Bitte wählen …</option>
+          <option>Deutsch</option><option>Englisch</option><option>Georgisch</option><option>Türkisch</option><option>Russisch</option><option>Arabisch</option><option>Französisch</option><option>Spanisch</option><option>Italienisch</option><option>Andere</option>
+        </select>
+      </div>
+      <div>
+        <label for="nach">In Sprache</label>
+        <select id="nach" name="Zielsprache" required>
+          <option value="">Bitte wählen …</option>
+          <option>Deutsch</option><option>Englisch</option><option>Georgisch</option><option>Türkisch</option><option>Russisch</option><option>Arabisch</option><option>Französisch</option><option>Spanisch</option><option>Italienisch</option><option>Andere</option>
+        </select>
+      </div>
+    </div>
+
+    <label>Dokumente <span class="opt">(optional, bei Dolmetschen nicht nötig)</span></label>
+    <div class="drop" id="drop">
+      <input type="file" id="datei" name="Dokumente" multiple accept=".pdf,.jpg,.jpeg,.png,.heic,.doc,.docx,.txt">
+      📎 <strong>Datei auswählen</strong> oder Foto aufnehmen<br>
+      <span class="hint">PDF, Word, JPG, PNG · zusammen max. 5&nbsp;MB</span>
+    </div>
+    <ul id="files"></ul>
+
+    <div class="row">
+      <div>
+        <label for="termin">Gewünschter Termin <span class="opt">(optional)</span></label>
+        <input type="date" id="termin" name="Wunschtermin">
+      </div>
+      <div>
+        <label for="ort">Ort beim Dolmetschen <span class="opt">(optional)</span></label>
+        <input type="text" id="ort" name="Einsatzort" placeholder="z. B. Standesamt Krefeld">
+      </div>
+    </div>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="Name" autocomplete="name" required>
+
+    <div class="row">
+      <div>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+      <div>
+        <label for="tel">Telefon <span class="opt">(optional)</span></label>
+        <input type="tel" id="tel" name="Telefon" autocomplete="tel">
+      </div>
+    </div>
+
+    <label for="nachricht">Nachricht <span class="opt">(optional)</span></label>
+    <textarea id="nachricht" name="Nachricht" placeholder="z. B. Verwendungszweck (Behörde, Gericht, Universität), Anzahl der Seiten …"></textarea>
+
+    <label class="check"><input type="checkbox" id="ds" required>
+      <span>Ich stimme zu, dass meine Angaben und Dateien zur Bearbeitung meiner Anfrage verwendet werden. Details in der <a href="https://www.textflows.de/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a>.</span>
+    </label>
+
+    <button type="submit" id="btn">Anfrage senden</button>
+    <div class="msg" id="msg"></div>
+  </form>
+
+  <ul class="trust">
+    <li>✔ Alle Unterlagen vertraulich</li>
+    <li>✔ Unverbindlich &amp; kostenlos</li>
+    <li>✔ Beglaubigt für Behörden</li>
+  </ul>
+
+  <p class="alt">Lieber direkt? <a href="tel:+4917631618833">📞 0176 316 188 33</a> · <a href="https://wa.me/4917631618833">WhatsApp</a> · <a href="mailto:info@textflows.de">info@textflows.de</a></p>
+</div>
+</main>
+
+<footer>
+  Textflows Sprachmittlung · Driessendorfer Str. 22 · 47798 Krefeld<br>
+  <a href="https://www.textflows.de/impressum">Impressum</a> · <a href="https://www.textflows.de/datenschutz">Datenschutz</a>
+</footer>
+
+<script>
+  const inp=document.getElementById('datei'),drop=document.getElementById('drop'),list=document.getElementById('files'),msg=document.getElementById('msg'),f=document.getElementById('f');
+  const MAX=5*1024*1024;
+  drop.addEventListener('click',()=>inp.click());
+  ['dragover','dragenter'].forEach(e=>drop.addEventListener(e,ev=>{ev.preventDefault();drop.classList.add('over')}));
+  ['dragleave','drop'].forEach(e=>drop.addEventListener(e,()=>drop.classList.remove('over')));
+  drop.addEventListener('drop',ev=>{ev.preventDefault();inp.files=ev.dataTransfer.files;show()});
+  inp.addEventListener('change',show);
+  function total(){let s=0;for(const x of inp.files)s+=x.size;return s}
+  function show(){
+    list.innerHTML='';
+    for(const x of inp.files){const li=document.createElement('li');li.textContent='📄 '+x.name+' ('+(x.size/1024/1024).toFixed(1)+' MB)';list.appendChild(li)}
+    if(total()>MAX){msg.className='msg err';msg.textContent='Die Dateien sind zusammen größer als 5 MB. Bitte weniger oder kleinere Dateien wählen – oder per E-Mail/WhatsApp senden.'}else{msg.className='msg'}
+  }
+  f.addEventListener('submit',ev=>{
+    let err='';
+    if(!f.Leistung.value) err='Bitte wählen Sie eine Leistung.';
+    else if(!f.Ausgangssprache.value||!f.Zielsprache.value) err='Bitte wählen Sie die Sprachen.';
+    else if(!f.Name.value.trim()) err='Bitte geben Sie Ihren Namen ein.';
+    else if(!/^\S+@\S+\.\S+$/.test(f.email.value)) err='Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+    else if(total()>MAX) err='Die Dateien sind zu groß (max. 5 MB).';
+    else if(!document.getElementById('ds').checked) err='Bitte stimmen Sie der Datenverarbeitung zu.';
+    if(err){ev.preventDefault();msg.className='msg err';msg.textContent=err;return}
+    const b=document.getElementById('btn');b.disabled=true;b.textContent='Wird gesendet …';
+  });
+</script>
+</body>
+</html>
